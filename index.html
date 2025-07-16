@@ -118,29 +118,10 @@
       type="image/webp"
       crossorigin
     />
-    <style>
-      .header__background {
-        position: absolute;
-        top: 50%; left: 50%;
-        width: 200%; height: auto;
-        transform-origin: center;
-        transform: translate3d(-35%, -48%, 0) rotate(0deg);
-        opacity: 0.2;
-        pointer-events: none;
-        animation: rotateHypnosis 60s linear infinite;
-        will-change: transform, opacity;
-      }
-      @keyframes rotateHypnosis {
-        to {
-          transform: translate3d(-35%, -48%, 0) rotate(360deg);
-        }
-      }
-    </style>
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <img class="header__background" src="img/hypnosis.webp" alt="" />
       <div class="header__content">
         <h1 class="header__title">
           <span class="header__title-part">Перестань</span>
