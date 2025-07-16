@@ -29,14 +29,12 @@
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Unbounded:wght@200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.min.css" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -113,6 +111,22 @@
       content="favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+    <style>
+      .header__background {
+        position: absolute;
+        top:    50%;
+        left:   50%;
+        width:  200%;
+        height: auto;
+        transform: translate(-35%, -48%) rotate(0deg);
+        transform-origin: center;
+        opacity: 0.2;
+        pointer-events: none;
+      }
+      @keyframes rotateHypnosis {
+        to { transform: translate(-35%, -48%) rotate(360deg); }
+      }
+    </style>
     <link
       rel="preload"
       as="image"
@@ -120,6 +134,7 @@
       type="image/webp"
       crossorigin
     />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header class="header">
