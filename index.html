@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,17 +114,20 @@
     <style>
       .header__background {
         position: absolute;
-        top:    50%;
-        left:   50%;
-        width:  200%;
+        top: 50%;
+        left: 50%;
+        width: 200%;
         height: auto;
         transform: translate(-35%, -48%) rotate(0deg);
         transform-origin: center;
         opacity: 0.2;
         pointer-events: none;
+        animation: rotateHypnosis 60s linear infinite;
       }
       @keyframes rotateHypnosis {
-        to { transform: translate(-35%, -48%) rotate(360deg); }
+        to {
+          transform: translate(-35%, -48%) rotate(360deg);
+        }
       }
     </style>
     <link
